@@ -3,7 +3,7 @@ import Connexion from "./Connexion";
 
 export default function Header() {
   return (
-    <div className="flex justify-between items-center p-4 text-white bg-gradient-to-r from-[var(--color-swb-main)] from-10% via-[var(--color-swb-second)] via-30% via-[var(--color-swb-second)] via-70% to-[var(--color-swb-main)] to-90%">
+    <div className="flex justify-between items-center p-4 text-white bg-gradient-to-r from-[var(--color-swb-main)] from-10% to-[var(--color-swb-second)] to 30%">
       <div className="">
         <Image
           src="/swbLogo.png"

@@ -10,7 +10,7 @@ export default function Connexion() {
   return (
     <>
       <button
-        className="px-6 py-3 bg-[var(--color-swb-main)] text-white rounded-xl hover:opacity-80 transition-opacity border-2 border-white"
+        className="px-6 py-3 bg-[var(--color-swb-main)] text-[var(--color-swb-second)] rounded-xl hover:text-white hover:bg-[var(--color-swb-second)] hover:border-white hover:transition duration-600 hover:-translate-x-12 hover:scale-200 transition-opacity border-4 border-[var(--color-swb-second)]"
         onClick={() => setShowModal(true)}
       >
         Connexion
@@ -31,9 +31,7 @@ export default function Connexion() {
 
             <form className="space-y-4">
               <div>
-                <label className="block text-sm font-medium  mb-1">
-                  pseudo
-                </label>
+                <label className="">pseudo</label>
                 <input
                   type="text"
                   value={username}
@@ -44,7 +42,7 @@ export default function Connexion() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium  mb-1">Email</label>
+                <label className="  ">Email</label>
                 <input
                   type="email"
                   value={email}
@@ -55,9 +53,7 @@ export default function Connexion() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium  mb-1">
-                  Mot de passe
-                </label>
+                <label className="">Mot de passe</label>
                 <input
                   type="password"
                   value={password}
