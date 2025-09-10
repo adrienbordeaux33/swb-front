@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "OctinSpraypaint";
+  src: url("/fonts/octin-spraypaint.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-swb-main: #701b2d;
+  --color-swb-second: #2d2841;
+}
+
+body {
+  background: var(--color-swb-main);
+  color: var(--color-swb-second);
+  font-family: OctinSpraypaint, Helvetica, sans-serif;
+}
