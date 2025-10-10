@@ -13,13 +13,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <>
-      <html lang="en">
-        <head>
-          <link rel="icon" type="image/x-icon" href="/lettering.png" />
-        </head>
-        <body>{children}</body>
-      </html>
-    </>
+    <html lang="en">
+      <head>
+        <link rel="icon" type="image/x-icon" href="/lettering.png" />
+      </head>
+      <body suppressHydrationWarning={true}>{children}</body>
+    </html>
   );
 }
