@@ -21,3 +21,4 @@ export default function RootLayout({
     </html>
   );
 }
+// le suppressHydrationWarning={true} est pour eviter l'erreur de react qui dit que le html genere par le serveur est different de celui genere par le client. Cela peut arriver si on utilise des choses qui changent entre le serveur et le client, comme des dates ou des heures. Ici, on n'en a pas besoin, mais c'est pour eviter l'erreur si jamais on en ajoute plus tard.
