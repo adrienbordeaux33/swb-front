@@ -18,3 +18,11 @@ body {
   color: var(--color-swb-second);
   font-family: OctinSpraypaint, Helvetica, sans-serif;
 }
+
+.btn-swb-main {
+  background-color: var(--color-swb-main);
+}
+
+.btn-swb-main:hover {
+  background-color: var(--color-swb-second);
+}
