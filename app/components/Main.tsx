@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Card from "./Card";
+import Parent from "./parent";
 
 export default function Main() {
   const [selectedMoves, setSelectedMoves] = useState<string[]>([]);
@@ -53,6 +54,9 @@ export default function Main() {
       </div>
       <div className="flex justify-center items-center text-white m-6 p-6 bg-gray-800 border-4 border-black rounded-lg">
         Liste des mouvements selectionnés : {selectedMoves.join(", ")}
+      </div>
+      <div>
+        <Parent />
       </div>
     </div>
   );
