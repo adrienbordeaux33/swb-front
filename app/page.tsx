@@ -15,11 +15,12 @@ export default function Home() {
   if (!entered) {
     return (
       <div
-        className="h-screen  flex  items-center justify-center overscroll-none"
+        className="h-screen  flex  items-center justify-center overscroll-none
+        bg-gradient-to-r from-blue-600 to-red-400 "
         onClick={() => setEntered(true)}
       >
         <Image
-          src="/swbLogo.png"
+          src="/LOGO-SWB NB png.png"
           alt="Logo street workout bordeaux"
           width={800}
           height={800}
