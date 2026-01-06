@@ -16,7 +16,7 @@ export default function Home() {
     return (
       <div
         className="h-screen  flex  items-center justify-center overscroll-none
-        bg-gradient-to-r from-blue-600 to-red-400 "
+        bg-gradient-to-br from-[var(--color-swb-main)] from-20% to-[var(--color-swb-second)] to-80%"
         onClick={() => setEntered(true)}
       >
         <Image
@@ -36,7 +36,7 @@ export default function Home() {
 
   return (
     <Provider store={store}>
-      <div className="grid grid-cols-12 grid-rows-12 min-h-screen">
+      <div className="grid grid-cols-12 grid-rows-12 min-h-screen bg-gradient-to-r from-[var(--color-swb-main)] to-[var(--color-swb-second)]">
         <div className="col-start-1 col-end-13 row-start-1 row-end-3 ">
           <Header />
         </div>
