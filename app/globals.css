@@ -27,7 +27,7 @@ body {
   background-color: var(--color-swb-second);
 }
 
-.rotword {
+/* .rotword {
   opacity: 0;
   color: white;
   text-align: center;
@@ -148,7 +148,68 @@ body {
   90% {
     opacity: 0.8;
   }
+  91.1% {
+    opacity: 0.1;
+  }
+  91.2% {
+    opacity: 0.8;
+  }
+  91.3% {
+    opacity: 0.1;
+  }
+  91.4% {
+    opacity: 0.8;
+  }
+  91.5% {
+    opacity: 0.1;
+  }
+  91.6% {
+    opacity: 0.8;
+  }
+  91.7% {
+    opacity: 0.1;
+  }
+  91.8% {
+    opacity: 0.8;
+  }
+  91.9% {
+    opacity: 0.1;
+  }
   100% {
     opacity: 0.8;
   }
+} */
+.title span:after {
+  content: "";
+  opacity: 0.8;
+  animation: word 8s infinite;
+}
+
+@keyframes word {
+  0%,
+  15% {
+    content: "STREET";
+  }
+  20%,
+  35% {
+    content: "WORKOUT";
+  }
+  40%,
+  55% {
+    content: "BORDEAUX";
+  }
+  60%,
+  100% {
+    content: "STREET WORKOUT BORDEAUX";
+  }
+}
+
+.itemmenu {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.menuonhover:hover > :not(:hover) {
+  filter: blur(5px);
+  opacity: 0.5;
 }

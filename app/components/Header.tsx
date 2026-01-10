@@ -16,12 +16,11 @@ export default function Header() {
         />
       </div>
       <div className="flex items-center  text-center text-xl sm:text-2xl md:text-4xl lg:text-6xl  p-2 flex-grow">
-        <h1 className=" p-2 flex-grow">
-          <span className="rotator">
-            <span className="rotword rot1">STREET</span>
-            <span className="rotword rot2">WORKOUT</span>
-            <span className="rotword rot3">BORDEAUX</span>
-          </span>
+        <h1 className="title p-2 flex-grow">
+          {/* <span className="rotword rot1">STREET</span>
+          <span className="rotword rot2">WORKOUT</span>
+          <span className="rotword rot3">BORDEAUX</span> */}
+          <span></span>
         </h1>
       </div>
       <div className=" p-2">

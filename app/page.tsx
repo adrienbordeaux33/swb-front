@@ -14,7 +14,7 @@ export default function Home() {
   if (!entered) {
     return (
       <div
-        className="h-full md:-1/2  flex  items-center justify-center overscroll-none
+        className="h-screen   flex  items-center justify-center overscroll-none
         bg-gradient-to-br from-[var(--color-swb-main)] from-20% to-[var(--color-swb-second)] to-80%"
         onClick={() => setEntered(true)}
       >
