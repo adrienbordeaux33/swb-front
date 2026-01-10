@@ -36,17 +36,15 @@ export default function Home() {
 
   return (
     <Provider store={store}>
-      <div className="grid grid-cols-12 grid-rows-12 min-h-screen bg-gradient-to-br from-[var(--color-swb-main)] from-20% to-[var(--color-swb-second)] to-80%">
+      <div className="grid grid-cols-12 grid-rows-12 min-h-screen bg-gradient-to-br from-[var(--color-swb-main)] from-20% to-[var(--color-swb-second)] to-80% overscroll-none">
         <div className="col-start-1 col-end-13 row-start-1 row-end-3 ">
           <Header />
         </div>
-        <div className="col-start-1 col-end-3 row-start-3 row-end-12  ">
-          <Menu />
-        </div>
-        <div className="col-start-3 col-end-13 row-start-3 row-end-10">
+
+        <div className="col-start-1 col-end-13 row-start-3 row-end-12">
           <Main />
         </div>
-        <div className="  col-start-1 col-end-13 row-start-10 row-end-12 ">
+        <div className="  col-start-1 col-end-13 row-start-12 row-end-13">
           <Footer />
         </div>
       </div>
