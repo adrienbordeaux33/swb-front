@@ -4,7 +4,6 @@ import { useState } from "react";
 import { configureStore } from "@reduxjs/toolkit";
 import Header from "./components/Header";
 import Main from "./components/Main";
-import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 import { Provider } from "react-redux";
 import rootReducer from "./reducers";

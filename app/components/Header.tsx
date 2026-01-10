@@ -3,8 +3,11 @@ import Connexion from "./Connexion";
 
 export default function Header() {
   return (
-    <div className="flex justify-between items-center p-4 text-white ">
-      <div className="">
+    <div
+      className="flex items-center p-4 text-white  
+    "
+    >
+      <div className=" p-2 ">
         <Image
           src="/LOGO-SWB NB png.png"
           alt="Logo street workout bordeaux"
@@ -12,10 +15,16 @@ export default function Header() {
           height={100}
         />
       </div>
-      <div className="text-xl sm:text-2xl md:text-4xl lg:text-6xl ">
-        <h1>STREET WORKOUT BORDEAUX</h1>
+      <div className="flex items-center  text-center text-xl sm:text-2xl md:text-4xl lg:text-6xl  p-2 flex-grow">
+        <h1 className=" p-2 flex-grow">
+          <span className="rotator">
+            <span className="rotword rot1">STREET</span>
+            <span className="rotword rot2">WORKOUT</span>
+            <span className="rotword rot3">BORDEAUX</span>
+          </span>
+        </h1>
       </div>
-      <div>
+      <div className=" p-2">
         <Connexion />
       </div>
     </div>

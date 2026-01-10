@@ -8,7 +8,7 @@ export default function Connexion() {
   const [showModal, setShowModal] = useState<boolean>(false);
 
   return (
-    <>
+    <div className="flex">
       <button
         className="px-6 py-3 bg-[var(--color-swb-main)] text-[var(--color-swb-second)] rounded-xl hover:text-white hover:bg-[var(--color-swb-second)] hover:border-white hover:transition duration-600 hover:-translate-x-12 hover:scale-150 transition-opacity border-4 border-[var(--color-swb-second)]"
         onClick={() => setShowModal(true)}
@@ -75,6 +75,6 @@ export default function Connexion() {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 }
