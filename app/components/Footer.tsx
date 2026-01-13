@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="flex text-white border-4 border-gray-500 items-center justify-center ">
+    <div className="flex text-white  items-center justify-center ">
       2014 SWB, Association Sportive loi 1901
     </div>
   );

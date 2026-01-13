@@ -23,9 +23,9 @@ export default function Header() {
           <span></span>
         </h1>
       </div>
-      <div className=" p-2">
+      {/* <div className=" p-2">
         <Connexion />
-      </div>
+      </div> */}
     </div>
   );
 }
