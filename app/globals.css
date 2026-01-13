@@ -27,34 +27,62 @@ body {
   background-color: var(--color-swb-second);
 }
 
-.title span:after {
+.span1:after {
   content: "";
   opacity: 0.8;
   animation: word 8s infinite;
 }
 
+.span2:after {
+  content: "";
+  opacity: 0.8;
+  animation: word2 8s infinite;
+}
+
 @keyframes word {
   0%,
   15% {
-    content: "STREET";
+    content: "";
   }
   20%,
   35% {
-    content: "WORKOUT";
+    content: "";
   }
   40%,
   55% {
-    content: "BORDEAUX";
+    content: "";
   }
   60%,
   100% {
-    content: "STREET WORKOUT BORDEAUX";
+    content: "  ";
+  }
+}
+
+@keyframes word2 {
+  0%,
+  15% {
+    content: "";
+  }
+  20%,
+  35% {
+    content: "";
+  }
+  40%,
+  55% {
+    content: "";
+  }
+  60%,
+  100% {
+    content: "";
   }
 }
 
 .itemmenu {
   transition: all 0.3s ease;
   cursor: pointer;
+  margin: 4px;
+  padding: 12px;
+  opacity: 0.8;
 }
 
 .menuonhover:hover > :not(:hover) {

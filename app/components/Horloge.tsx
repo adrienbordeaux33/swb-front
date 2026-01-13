@@ -65,13 +65,13 @@ export default function HorlogeClean() {
   return (
     <div className="horloge flex items-center justify-center my-6">
       <svg
-        width={300}
-        height={300}
+        width={400}
+        height={400}
         viewBox="0 0 200 200"
         className="rounded-full bg-[var(--color-swb-second)] shadow-lg"
       >
         <defs>
-          <filter id="f" x="-50%" y="-50%" width="200%" height="200%">
+          {/* <filter id="f" x="-50%" y="-50%" width="200%" height="200%">
             <feDropShadow
               dx="0"
               dy="2"
@@ -79,10 +79,10 @@ export default function HorlogeClean() {
               floodColor="var(--color-swb-second)"
               floodOpacity="0.4"
             />
-          </filter>
+          </filter> */}
         </defs>
 
-        <circle
+        {/* <circle
           cx="100"
           cy="100"
           r="96"
@@ -90,9 +90,9 @@ export default function HorlogeClean() {
           stroke="var(--color-swb-main)"
           strokeWidth="2"
           filter="url(#f)"
-        />
+        /> */}
 
-        <g stroke="var(--color-swb-main)" strokeWidth="1">
+        {/* <g stroke="var(--color-swb-main)" strokeWidth="1">
           {Array.from({ length: 60 }).map((_, i) => {
             const angle = i * 6 * (Math.PI / 180);
             const inner = i % 5 === 0 ? 80 : 86;
@@ -103,12 +103,12 @@ export default function HorlogeClean() {
             const y2 = 100 - outer * Math.cos(angle);
             return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} />;
           })}
-        </g>
+        </g> */}
 
         {months.map((m, i) => {
           const angleDeg = i * (360 / months.length) - 90;
           const angle = (angleDeg * Math.PI) / 180;
-          const r = 86;
+          const r = 90;
           const x = 100 + r * Math.cos(angle);
           const y = 100 + r * Math.sin(angle);
           const isActive = i === monthIndex;
@@ -119,6 +119,7 @@ export default function HorlogeClean() {
               y={y}
               fontSize={8}
               fill={isActive ? "#fff" : "var(--color-swb-second)"}
+              opacity={isActive ? 1 : 0}
               textAnchor="middle"
               dominantBaseline="middle"
             >
@@ -131,7 +132,7 @@ export default function HorlogeClean() {
           const i = idx + 1;
           const angleDeg = idx * (360 / 31) - 90;
           const angle = (angleDeg * Math.PI) / 180;
-          const r = 72;
+          const r = 90;
           const x = 100 + r * Math.cos(angle);
           const y = 100 + r * Math.sin(angle);
           const isActive = i === today;
@@ -140,8 +141,9 @@ export default function HorlogeClean() {
               key={i}
               x={x}
               y={y}
-              fontSize={6}
+              fontSize={8}
               fill={isActive ? "#fff" : "var(--color-swb-second)"}
+              opacity={isActive ? 1 : 0}
               textAnchor="middle"
               dominantBaseline="middle"
             >
@@ -153,7 +155,7 @@ export default function HorlogeClean() {
         {days.map((d, idx) => {
           const angleDeg = idx * (360 / days.length) - 90;
           const angle = (angleDeg * Math.PI) / 180;
-          const r = 56;
+          const r = 90;
           const x = 100 + r * Math.cos(angle);
           const y = 100 + r * Math.sin(angle);
           const isActive = idx === weekDay;
@@ -162,9 +164,9 @@ export default function HorlogeClean() {
               key={d}
               x={x}
               y={y}
-              fontSize={9}
+              fontSize={8}
               fill={isActive ? "#fff" : "var(--color-swb-second)"}
-              fontWeight={isActive ? 700 : 100}
+              opacity={isActive ? 1 : 0}
               textAnchor="middle"
               dominantBaseline="middle"
             >
@@ -182,6 +184,7 @@ export default function HorlogeClean() {
           stroke="var(--color-swb-main)"
           strokeWidth="6"
           strokeLinecap="round"
+          strokeOpacity={0.6}
         />
         <line
           ref={minutesRef}
@@ -192,6 +195,7 @@ export default function HorlogeClean() {
           stroke="var(--color-swb-main)"
           strokeWidth="4"
           strokeLinecap="round"
+          strokeOpacity={0.6}
         />
         <line
           ref={secondsRef}
@@ -202,6 +206,7 @@ export default function HorlogeClean() {
           stroke="var(--color-swb-main)"
           strokeWidth="2"
           strokeLinecap="round"
+          strokeOpacity={0.6}
         />
 
         <circle cx="100" cy="100" r="4" fill="#fff" />
