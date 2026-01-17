@@ -14,8 +14,6 @@
 }
 
 body {
-  background: var(--color-swb-main);
-  color: var(--color-swb-second);
   font-family: OctinSpraypaint, Helvetica, sans-serif;
 }
 
@@ -27,56 +25,6 @@ body {
   background-color: var(--color-swb-second);
 }
 
-.span1:after {
-  content: "";
-  opacity: 0.8;
-  animation: word 8s infinite;
-}
-
-.span2:after {
-  content: "";
-  opacity: 0.8;
-  animation: word2 8s infinite;
-}
-
-@keyframes word {
-  0%,
-  15% {
-    content: "";
-  }
-  20%,
-  35% {
-    content: "";
-  }
-  40%,
-  55% {
-    content: "";
-  }
-  60%,
-  100% {
-    content: "  ";
-  }
-}
-
-@keyframes word2 {
-  0%,
-  15% {
-    content: "";
-  }
-  20%,
-  35% {
-    content: "";
-  }
-  40%,
-  55% {
-    content: "";
-  }
-  60%,
-  100% {
-    content: "";
-  }
-}
-
 .itemmenu {
   transition: all 0.3s ease;
   cursor: pointer;
@@ -86,6 +34,12 @@ body {
 }
 
 .menuonhover:hover > :not(:hover) {
-  filter: blur(5px);
+  filter: blur(2px);
   opacity: 0.5;
+}
+
+.menuonhover:hover > .itemmenu:hover {
+  transform: scale(1.2);
+  opacity: 1;
+  filter: none;
 }

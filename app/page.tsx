@@ -12,7 +12,7 @@ export default function Home() {
   if (!entered) {
     return (
       <div
-        className="h-screen flex items-center justify-center overscroll-none
+        className="h-screen flex items-center justify-center 
         bg-gradient-to-br from-[var(--color-swb-main)] from-20% to-[var(--color-swb-second)] to-80% "
         onClick={() => setEntered(true)}
       >
@@ -21,7 +21,6 @@ export default function Home() {
           alt="Logo street workout bordeaux"
           width={800}
           height={800}
-          
         />
       </div>
     );
@@ -34,7 +33,7 @@ export default function Home() {
 
   return (
     <Provider store={store}>
-      <div className="h-screen flex items-center justify-center flex  bg-gradient-to-br from-[var(--color-swb-main)] from-20% to-[var(--color-swb-second)] to-80% overscroll-none  ">
+      <div className="h-screen flex items-center justify-center flex  bg-gradient-to-br from-[var(--color-swb-main)] from-20% to-[var(--color-swb-second)] to-80%  ">
         <div className=" ">
           <div className="">
             <Main />
