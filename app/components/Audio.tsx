@@ -21,7 +21,7 @@ export default function Audio() {
 
   return (
     <div>
-      <figure className="flex flex-col m-20 opacity-80">
+      <figure className="flex flex-col opacity-80">
         <figcaption className=" ">
           bxkq · PXLWYSE - Te Conoci (Extended):
         </figcaption>

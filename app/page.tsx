@@ -33,11 +33,9 @@ export default function Home() {
 
   return (
     <Provider store={store}>
-      <div className="h-screen flex items-center justify-center flex  bg-gradient-to-br from-[var(--color-swb-main)] from-20% to-[var(--color-swb-second)] to-80%  ">
-        <div className=" ">
-          <div className="">
-            <Main />
-          </div>
+      <div className="w-full flex items-center justify-center flex  bg-gradient-to-br from-[var(--color-swb-main)] from-20% to-[var(--color-swb-second)] to-80%  ">
+        <div className="">
+          <Main />
         </div>
       </div>
     </Provider>
