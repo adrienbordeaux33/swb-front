@@ -10,7 +10,7 @@ export default function Media() {
           Cliquez ici
         </button>
       </a>
-      pour adhérer à l'association Street Workout Bordeaux
+      pour adhérer à l&apos;association Street Workout Bordeaux
     </div>
   );
 }

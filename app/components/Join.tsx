@@ -5,7 +5,7 @@ export default function Rejoindre() {
       <br />
       de 14h à 17h au spot Queyries
       <br />
-      21 Parc d'Activités des Queyries, Bordeaux, France 33100
+      21 Parc d&apos;Activités des Queyries, Bordeaux, France 33100
       <br />
       (en face du dépôt de tramway Bordeaux Bastide)
       <br />
